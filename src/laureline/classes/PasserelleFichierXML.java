@@ -2,9 +2,9 @@
 // Fichier : PasserelleFichier.java
 // Cette classe abstraite hérite de la classe Passerelle
 // Elle précise la signature de la méthode pour "parser" un fichier GPS afin de mettre à jour un objet Trace fourni en paramètre.
-// Dernière mise à jour : 26/3/2018 par Jim
+// Dernière mise à jour : 16/11/2021 par Laureline
 
-package jim.classes;
+package laureline.classes;
 
 public abstract class PasserelleFichierXML extends PasserelleXML {
 	

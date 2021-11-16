@@ -1,4 +1,4 @@
-package jim.testsunitaires;
+package laureline.testsunitaires;
 
 import static org.junit.Assert.*;
 
@@ -8,12 +8,12 @@ import java.util.Date;
 
 import org.junit.Test;
 
-import jim.classes.Outils;
-import jim.classes.PasserelleServicesWebXML;
-import jim.classes.Point;
-import jim.classes.PointDeTrace;
-import jim.classes.Trace;
-import jim.classes.Utilisateur;
+import laureline.classes.Outils;
+import laureline.classes.PasserelleServicesWebXML;
+import laureline.classes.Point;
+import laureline.classes.PointDeTrace;
+import laureline.classes.Trace;
+import laureline.classes.Utilisateur;
 
 public class PasserelleServiceWebXMLTest {
 	

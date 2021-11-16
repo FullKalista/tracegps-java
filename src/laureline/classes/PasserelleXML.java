@@ -1,9 +1,9 @@
 // Projet TraceGPS - API Java
 // Fichier : Passerelle.java
 // Cette classe abstraite fournit les outils permettant d'obtenir un document XML à partir d'un fichier ou d'un service web
-// Dernière mise à jour : 26/3/2018 par Jim
+// Dernière mise à jour : 16/11/2021 par Laureline
 
-package jim.classes;
+package laureline.classes;
 
 import java.io.BufferedInputStream;
 import java.io.File;

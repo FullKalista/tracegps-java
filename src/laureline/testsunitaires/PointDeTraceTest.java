@@ -1,4 +1,4 @@
-package jim.testsunitaires;
+package laureline.testsunitaires;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,8 @@ import java.util.Date;
 import org.junit.Before;
 import org.junit.Test;
 
-import jim.classes.Outils;
-import jim.classes.PointDeTrace;
+import laureline.classes.Outils;
+import laureline.classes.PointDeTrace;
 
 public class PointDeTraceTest {
 

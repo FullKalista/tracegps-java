@@ -4,9 +4,9 @@
 // Elle fournit des méthodes pour appeler les différents services web
 // Elle utilise le modèle Jaxp pour parcourir le document XML
 // Le modèle Jaxp fait partie du JDK (et également du SDK Android)
-// Dernière mise à jour : 16/04/2021 par Jim
+// Dernière mise à jour : 16/11/2021 par Laureline
 
-package jim.classes;
+package laureline.classes;
 
 import java.util.ArrayList;
 import java.util.Date;

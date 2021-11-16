@@ -1,4 +1,4 @@
-package jim.classes;
+package laureline.classes;
 
 import java.util.Date;
 
@@ -12,7 +12,7 @@ import java.util.Date;
 // - le temps cumulé depuis le départ (en secondes)
 // - la distance cumulée depuis le départ (en Km)
 // - la vitesse instantanée, calculée entre le point précédent et le point actuel (en Km/h)
-// Dernière mise à jour : 26/3/2018 par Jim
+// Dernière mise à jour : 26/3/2018 par Laureline
 
 public class PointDeTrace extends Point {
 

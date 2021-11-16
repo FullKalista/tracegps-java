@@ -1,10 +1,10 @@
-package jim.classes;
+package laureline.classes;
 
 import java.util.ArrayList;
 import java.util.Date;
 
 // Cette classe représente une trace au moyen d'une collection d'objets PointDeTrace<br>
-// Dernière mise à jour : 29/4/2018 par Jim
+// Dernière mise à jour : 16/11/2021 par Laureline
 
 public class Trace {
 

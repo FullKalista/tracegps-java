@@ -1,10 +1,10 @@
-package jim.testsvisuels;
+package laureline.testsvisuels;
 
-import jim.classes.PasserelleFichierXML;
-import jim.classes.PasserelleGPX;
-import jim.classes.PasserellePWX;
-import jim.classes.PasserelleTCX;
-import jim.classes.Trace;
+import laureline.classes.PasserelleFichierXML;
+import laureline.classes.PasserelleGPX;
+import laureline.classes.PasserellePWX;
+import laureline.classes.PasserelleTCX;
+import laureline.classes.Trace;
 
 public class TestPasserelleFichierXML {
 

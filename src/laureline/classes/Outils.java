@@ -1,9 +1,9 @@
 /**
  * Ce package contient 2 classes : Adresse et Individu.
  * @version 2.3
- * @author JM CARTRON
+ * @author Laureline HENAFF
  */
-package jim.classes;
+package laureline.classes;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

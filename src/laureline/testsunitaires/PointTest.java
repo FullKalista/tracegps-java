@@ -1,11 +1,11 @@
-package jim.testsunitaires;
+package laureline.testsunitaires;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import jim.classes.Point;
+import laureline.classes.Point;
 
 public class PointTest {
 

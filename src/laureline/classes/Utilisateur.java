@@ -1,9 +1,9 @@
-package jim.classes;
+package laureline.classes;
 
 import java.util.Date;
 
 // Cette classe représente un utilisateur de l'application
-// Dernière mise à jour : 22/1/2018 par Jim
+// Dernière mise à jour : 16/11/2021 par Laureline
 
 public class Utilisateur {
 

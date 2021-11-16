@@ -1,14 +1,14 @@
-package jim.testsvisuels;
+package laureline.testsvisuels;
 
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 
-import jim.classes.Outils;
-import jim.classes.PasserelleServicesWebXML;
-import jim.classes.PointDeTrace;
-import jim.classes.Trace;
-import jim.classes.Utilisateur;
+import laureline.classes.Outils;
+import laureline.classes.PasserelleServicesWebXML;
+import laureline.classes.PointDeTrace;
+import laureline.classes.Trace;
+import laureline.classes.Utilisateur;
 
 public class TestPasserelleServicesWebXML {
 

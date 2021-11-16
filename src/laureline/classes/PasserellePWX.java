@@ -1,9 +1,9 @@
 // Projet TraceGPS - API Java
 // Fichier : PasserellePWX.java
 // Cette classe fournit les outils permettant de "parser" un fichier PWX pour mettre à jour un objet Trace.<br>
-// Dernière mise à jour : 26/3/2018 par Jim
+// Dernière mise à jour : 16/11/2021 par Laureline
 
-package jim.classes;
+package laureline.classes;
 
 import java.io.InputStream;
 import java.util.Date;

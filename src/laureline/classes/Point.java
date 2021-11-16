@@ -1,7 +1,7 @@
-package jim.classes;
+package laureline.classes;
 
 // Cette classe représente un point géographique avec une latitude, une longitude et une altitude
-// Dernière mise à jour : 26/3/2018 par Laureline
+// Dernière mise à jour : 16/11/2021 par Laureline
 
 public class Point {
 	
