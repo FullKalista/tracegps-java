@@ -3,17 +3,15 @@ package laureline.testsunitaires;
 import static org.junit.Assert.*;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.junit.Test;
-
+/*import java.text.SimpleDateFormat;
+import java.util.Date;
 import laureline.classes.Outils;
 import laureline.classes.PasserelleServicesWebXML;
 import laureline.classes.Point;
 import laureline.classes.PointDeTrace;
 import laureline.classes.Trace;
-import laureline.classes.Utilisateur;
+import laureline.classes.Utilisateur;*/
 
 public class PasserelleServiceWebXMLTest {
 	

@@ -1,20 +1,20 @@
 package laureline.testsvisuels;
 
 import java.text.ParseException;
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Date;
 
 import laureline.classes.Outils;
 import laureline.classes.PasserelleServicesWebXML;
 import laureline.classes.PointDeTrace;
 import laureline.classes.Trace;
-import laureline.classes.Utilisateur;
+import laureline.classes.Utilisateur;*/
 
 public class TestPasserelleServicesWebXML {
 
 	public static void main(String[] args) throws ParseException {
 		
-		String msg;
+		//String msg;
 	
 		// test visuel de la méthode getTousLesUtilisateurs
 
