@@ -1,17 +1,14 @@
 package laureline.testsunitaires;
 
 import static org.junit.Assert.*;
-
 import java.text.ParseException;
-import org.junit.Test;
-/*import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import org.junit.Test;
 import laureline.classes.Outils;
 import laureline.classes.PasserelleServicesWebXML;
-import laureline.classes.Point;
 import laureline.classes.PointDeTrace;
 import laureline.classes.Trace;
-import laureline.classes.Utilisateur;*/
 
 public class PasserelleServiceWebXMLTest {
 
@@ -139,12 +136,14 @@ public class PasserelleServiceWebXMLTest {
 	public void testgetUnParcoursEtSesPoints() {
 		String msg;
 	
-		 test visuel de la méthode getUnParcoursEtSesPoints
+		// test visuel de la méthode getUnParcoursEtSesPoints
 		Trace laTrace = new Trace();
 		msg = PasserelleServicesWebXML.getUnParcoursEtSesPoints("europa", Outils.sha1("mdputilisateur"), 2, laTrace);
-		 affichage de la réponse
+		
+		// affichage de la réponse
 		System.out.println(msg);
-		 affichage de la trace
+		
+		// affichage de la trace
 		System.out.println(laTrace.toString());
 	}
 	
@@ -153,14 +152,17 @@ public class PasserelleServiceWebXMLTest {
 		
 		String msg;
 		
-		 test visuel de la méthode getLesParcoursDunUtilisateur
+		//test visuel de la méthode getLesParcoursDunUtilisateur
 		ArrayList<Trace> lesTraces = new ArrayList<Trace>();
 		msg = PasserelleServicesWebXML.getLesParcoursDunUtilisateur("europa", Outils.sha1("mdputilisateur"), "callisto", lesTraces);
-		 affichage de la réponse
+		
+		//affichage de la réponse
 		System.out.println(msg);
-		 affichage du nombre de traces
+		
+		//affichage du nombre de traces
 		System.out.println("Nombre de traces : " + lesTraces.size());
-		 affichage de tous les utilisateurs
+		
+		//affichage de tous les utilisateurs
 		for (Trace uneTrace : lesTraces)
 		{	System.out.println(uneTrace.toString());
 		}
