@@ -152,7 +152,7 @@ public class PasserelleServiceWebXMLTest {
 		
 		String msg;
 		
-		//test visuel de la m�thode getLesParcoursDunUtilisateur
+		//test visuel de la méthode getLesParcoursDunUtilisateur
 		ArrayList<Trace> lesTraces = new ArrayList<Trace>();
 		msg = PasserelleServicesWebXML.getLesParcoursDunUtilisateur("europa", Outils.sha1("mdputilisateur"), "callisto", lesTraces);
 		
@@ -182,7 +182,7 @@ public class PasserelleServiceWebXMLTest {
 		
 		lePoint = new PointDeTrace(21, 0, 48.15, -1.68, 50, laDate, 80);
 		msg = PasserelleServicesWebXML.envoyerPosition("europa", Outils.sha1("mdputilisateur"), lePoint);
-		assertEquals("Erreur : le num�ro de trace ne correspond pas à cet utilisateur.", msg);	
+		assertEquals("Erreur : le numéro de trace ne correspond pas à cet utilisateur.", msg);	
 		
 		lePoint = new PointDeTrace(4, 0, 48.15, -1.68, 50, laDate, 80);
 		msg = PasserelleServicesWebXML.envoyerPosition("europa", Outils.sha1("mdputilisateur"), lePoint);
@@ -218,7 +218,7 @@ public class PasserelleServiceWebXMLTest {
 		assertEquals("Erreur : le numéro de trace ne correspond pas à cet utilisateur.", msg);
 		
 		msg = PasserelleServicesWebXML.arreterEnregistrementParcours("europa", Outils.sha1("mdputilisateur"), 4);
-		assertEquals("Erreur : cette trace est déjà termin�e.", msg);	
+		assertEquals("Erreur : cette trace est déjà terminée.", msg);	
 		
 		msg = PasserelleServicesWebXML.arreterEnregistrementParcours("oxygen", Outils.sha1("mdputilisateur"), 21);
 		assertEquals("Enregistrement terminé.", msg);	
@@ -234,7 +234,7 @@ public class PasserelleServiceWebXMLTest {
 		assertEquals("Erreur : parcours inexistant.", msg);
 		
 		msg = PasserelleServicesWebXML.supprimerUnParcours("europa", Outils.sha1("mdputilisateur"), 21);
-		assertEquals("Erreur : vous n'êtes pas le propri�taire de ce parcours.", msg);	
+		assertEquals("Erreur : vous n'êtes pas le propriétaire de ce parcours.", msg);	
 		
 		msg = PasserelleServicesWebXML.supprimerUnParcours("europa", Outils.sha1("mdputilisateur"), 30);
 		assertEquals("Parcours supprimé.", msg);	
