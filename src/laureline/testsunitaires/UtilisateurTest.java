@@ -34,14 +34,17 @@ public class UtilisateurTest {
 
 	@Test
 	public void testGetId() {
-		assertEquals("Test getId", 0 , utilisateur1.getId());
-		assertEquals("Test getId", 111, utilisateur2.getId());	
+		int id1 = utilisateur1.getId();
+		assertEquals("Test getId", 0, id1);
+		
+		int id2 = utilisateur2.getId();
+		assertEquals("Test getId", 111, id2);
 	}
 
 	@Test
 	public void testSetId() {
-		utilisateur1.setId(112);
-		assertEquals("Test setId", 112, utilisateur1.getId());
+		utilisateur1.setId(1);
+		assertEquals("TestSetLatitude", 1, utilisateur1.getId());
 	}
 
 	@Test
@@ -52,70 +55,77 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetPseudo() {
-		utilisateur1.setPseudo("Bob");
-		assertEquals("Test setPseudo", "Bob", utilisateur1.getPseudo());
+		utilisateur1.setPseudo("Yvan");
+		assertEquals("Test setPseudo", "Yvan", utilisateur1.getPseudo());
 	}
 
 	@Test
 	public void testGetMdpSha1() {
-		assertEquals("Test GetMdpSha1", "", utilisateur1.getMdpSha1());
-		assertEquals("Test GetMdpSha1", "abcdef", utilisateur2.getMdpSha1());
+		String mdp1 = utilisateur1.getMdpSha1();
+		assertEquals("Test GetMdpSha1", "", mdp1);
+		
+		String mdp2 = utilisateur2.getMdpSha1();
+		assertEquals("Test GetMdpSha1", "abcdef", mdp2);	
 	}
 
 	@Test
 	public void testSetMdpSha1() {
-		utilisateur1.setMdpSha1("azerty");
-		assertEquals("Test setMdpSha1", "azerty", utilisateur1.getMdpSha1());
+		utilisateur1.setMdpSha1("cococoucou");
+		assertEquals("Test SetMdpSha1", "cococoucou", utilisateur1.getMdpSha1());
 	}
 
 	@Test
 	public void testGetAdrMail() {
-		assertEquals("Test getAdrMail", "", utilisateur1.getAdrMail());
-		assertEquals("Test getAdrMail", "toto@free.fr", utilisateur2.getAdrMail());
+		assertEquals("Test getAdresse", "", utilisateur1.getAdrMail());
+		assertEquals("Test getPseudo", "toto@free.fr", utilisateur2.getAdrMail());
 	}
 
 	@Test
 	public void testSetAdrMail() {
-		utilisateur1.setAdrMail("vincentlf56@gmail.com");
-		assertEquals("Test SetAdrMail", "vincentlf56@gmail.com", utilisateur1.getAdrMail());
+		utilisateur1.setAdrMail("delasalle.sio.fortounatto.y@gmail.com");;
+		assertEquals("Test setPseudo", "delasalle.sio.fortounatto.y@gmail.com", utilisateur1.getAdrMail());
 	}
 
 	@Test
 	public void testGetNumTel() {
-		assertEquals("Test getNumTel", "", utilisateur1.getNumTel());
-		assertEquals("Test getNumTel", "11.22.33.44.55", utilisateur2.getNumTel());
-
+		assertEquals("Test GetNumTel", "", utilisateur1.getNumTel());
+		assertEquals("Test GetNumTel", "11.22.33.44.55", utilisateur2.getNumTel());
 	}
 
 	@Test
 	public void testSetNumTel() {
-		utilisateur1.setNumTel("0677413867");
-		assertEquals("Test setNumTel", "06.77.41.38.67", utilisateur1.getNumTel());
-
+		utilisateur1.setNumTel("9988776655");
+		assertEquals("Test SetNumTel", "99.88.77.66.55", utilisateur1.getNumTel());
 	}
 
 	@Test
 	public void testGetNiveau() {
-		assertEquals("Test getNiveau", 0, utilisateur1.getNiveau());
-		assertEquals("Test getNiveau", 1, utilisateur2.getNiveau());
+		int niveau1 = utilisateur1.getNiveau();
+		assertEquals("Test getNiveau", 0, niveau1);
+		
+		int niveau2 = utilisateur2.getNiveau();
+		assertEquals("Test getNiveau", 1, niveau2);
 	}
 
 	@Test
 	public void testSetNiveau() {
-		utilisateur1.setNiveau(1);
-		assertEquals("Test setNiveau", 1, utilisateur1.getNiveau());
+		utilisateur1.setNiveau(19);
+		assertEquals("Test SetNiveau", 19, utilisateur1.getNiveau());
 	}
 
 	@Test
-	public void testGetDateCreation() throws ParseException {
-		assertNull("Test GetDateCreation", utilisateur1.getDateCreation());
-		assertEquals("Test GetDateCreation", Outils.convertirEnDateHeure("21/06/2016 14:00:00"), utilisateur2.getDateCreation());
+	public void testGetDateCreation() {
+		Date debut1 = utilisateur1.getDateCreation();
+		assertNull("Test getDateCreation", debut1);
+		
+		String debut2 = Outils.formaterDateHeureFR(utilisateur2.getDateCreation());
+		assertEquals("Test getDateCreation", "21/06/2016 14:00:00", debut2);	
 	}
 
 	@Test
 	public void testSetDateCreation() throws ParseException {
-		utilisateur1.setDateCreation(Outils.convertirEnDateHeure("28/06/2018 14:00:00"));
-		assertEquals("Test GetNbTraces", Outils.convertirEnDateHeure("28/06/2018 14:00:00"), utilisateur1.getDateCreation());
+		utilisateur1.setDateCreation(Outils.convertirEnDateHeure("26/06/2016 14:00:00"));
+		assertEquals("Test setDateCreation", "26/06/2016 14:00:00", Outils.formaterDateHeureFR(utilisateur1.getDateCreation()));	
 	}
 
 	@Test
@@ -126,21 +136,23 @@ public class UtilisateurTest {
 
 	@Test
 	public void testSetNbTraces() {
-		utilisateur1.setNbTraces(5);
-		assertEquals("Test setNbTraces", 5, utilisateur1.getNbTraces());
+		utilisateur1.setNbTraces(2);
+		assertEquals("Test SetNbTraces", 2, utilisateur1.getNbTraces());
 	}
 
 	@Test
-	public void testGetDateDerniereTrace() throws ParseException {
-		assertNull("Test GetDateDerniereTrace", utilisateur1.getDateDerniereTrace());
-		assertEquals("Test GetDateDerniereTrace", Outils.convertirEnDateHeure("28/06/2016 14:00:00"), utilisateur2.getDateDerniereTrace());
-
+	public void testGetDateDerniereTrace() {
+		Date debut1 = utilisateur1.getDateDerniereTrace();
+		assertNull("Test GetDateDerniereTrace", debut1);
+		
+		String debut2 = Outils.formaterDateHeureFR(utilisateur2.getDateDerniereTrace());
+		assertEquals("Test GetDateDerniereTrace", "28/06/2016 14:00:00", debut2);
 	}
 
 	@Test
 	public void testSetDateDerniereTrace() throws ParseException {
-		utilisateur1.setDateDerniereTrace(Outils.convertirEnDateHeure("04/12/2018 17:00:00"));
-		assertEquals("Test GetDateDerniereTrace", Outils.convertirEnDateHeure("04/12/2018 17:00:00"), utilisateur1.getDateDerniereTrace());
+		utilisateur1.setDateDerniereTrace(Outils.convertirEnDateHeure("05/11/2019 17:05:00"));
+		assertEquals("Test setDateDerniereTrace", "05/11/2019 17:05:00", Outils.formaterDateHeureFR(utilisateur1.getDateDerniereTrace()));
 	}
 
 	@Test
