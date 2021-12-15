@@ -1,14 +1,14 @@
 package laureline.testsvisuels;
 
 import java.text.ParseException;
-/*import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Date;
 
 import laureline.classes.Outils;
 import laureline.classes.PasserelleServicesWebXML;
 import laureline.classes.PointDeTrace;
 import laureline.classes.Trace;
-import laureline.classes.Utilisateur;*/
+import laureline.classes.Utilisateur;
 
 public class TestPasserelleServicesWebXML {
 
@@ -83,7 +83,7 @@ public class TestPasserelleServicesWebXML {
 		
 		// test visuel de la méthode getUnParcoursEtSesPoints
 		Trace laTrace = new Trace();
-		msg = PasserelleServicesWebXMLCorentin.getUnParcoursEtSesPoints("europa", "bf65a3f3eae46af8192408b64b6f1e8db1cbc6d8", 4, laTrace);
+		msg = PasserelleServicesWebXML.getUnParcoursEtSesPoints("europa", "bf65a3f3eae46af8192408b64b6f1e8db1cbc6d8", 4, laTrace);
 		//affichage de la réponse
 		System.out.println(msg);
 		// affichage de la trace
